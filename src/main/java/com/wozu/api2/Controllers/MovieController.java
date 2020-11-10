@@ -11,7 +11,7 @@ public class MovieController {
 
     @Autowired
     MovieServiceImpl movieServiceImpl;
-
+//                            /search?search=(movie)
     @GetMapping("/movie/{search}")
     @ResponseBody
     public Movie getMovie(@RequestParam String search){
